@@ -528,7 +528,7 @@ void setup()
   #ifdef DIGIPOT_I2C
     digipot_i2c_init();
   #endif
-  analogWrite(9, 150);
+  //analogWrite(9, 150);
 }
 
 
@@ -2050,7 +2050,7 @@ void process_commands()
       case 150: //Svetodiods
         byte red;
         if(code_seen('S')) red = code_value();
-        analogWrite(9, red);
+        // analogWrite(9, red);
         break;
     #endif //FAN_PIN
     #ifdef BARICUDA
